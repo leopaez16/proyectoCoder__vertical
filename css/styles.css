@@ -1,200 +1,185 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-/* BODY */
-body {
-    background-image: url(../images/geometric-abstract-grey-background-for-website-wallpapers-bussines-templates-vector.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
 }
 
+/* BODY */
+body {
+  background-image: url(../images/geometric-abstract-grey-background-for-website-wallpapers-bussines-templates-vector.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* NAVBAR*/
 nav {
-    background-image: url(../images/1d65cc9ce3375d8fe3a993b90a7d41b6.jpg);
+  background-image: url(../images/1d65cc9ce3375d8fe3a993b90a7d41b6.jpg);
 }
 
 .nav-item {
-    color: white;
-    text-decoration: none;
-    padding: 30px;
+  color: white;
+  text-decoration: none;
+  padding: 30px;
 }
 
 .navbar-toggler-icon {
-    color: white;
+  color: white;
 }
-
 
 /* BANNER */
 .banner {
-    text-align: center;
-    height: 400px;
-    padding-top: 150px;
+  text-align: center;
+  height: 400px;
+  padding-top: 150px;
 }
 
 /* CARRUSEL */
-
 .carousel-slide {
-    margin-top: 10px;
+  margin-top: 10px;
 }
+
 .slide img {
-    height: 60vh;
-    width: 80vh;
+  height: 60vh;
+  width: 80vh;
 }
+
 /* Segundo Titulo */
-
-.segundoTitulo { 
-    text-align: center;
-    padding-top: 80px;
-
+.segundoTitulo {
+  text-align: center;
+  padding-top: 80px;
 }
 
 /* CARDS */
-
 .cardPrincipal {
-    padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
+
 .card {
-    margin: 30px;
-    padding: 10px;
-    padding-top: 50px;
+  margin: 30px;
+  padding: 10px;
+  padding-top: 50px;
 }
 
 /* FOOTER */
-
 footer {
-    background-image: url(../images/1d65cc9ce3375d8fe3a993b90a7d41b6.jpg);
+  background-image: url(../images/1d65cc9ce3375d8fe3a993b90a7d41b6.jpg);
 }
+
 .listaPiePrincipal {
-    color: white;
-    display: flex;
-    justify-content: center;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
+
 .listaPie {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
+
 .listaPie1 {
-    font-size: 10pt;
-    padding: 50px;
+  font-size: 10pt;
+  padding: 50px;
 }
 
 /*-------------- Pestaña Hombre --------------*/
-
 /* BODY */
-
 .body1 {
-    background-image: url(../images/geometric-abstract-grey-background-for-website-wallpapers-bussines-templates-vector.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "main   main   main"
-    "footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 4fr 1fr;
-
+  background-image: url(../images/geometric-abstract-grey-background-for-website-wallpapers-bussines-templates-vector.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "header header header" "main   main   main" "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 4fr 1fr;
 }
 
 /* HEADER */
 header {
-    background-image: url(../images/1d65cc9ce3375d8fe3a993b90a7d41b6.jpg);
-    display: flex;
-    gap: 20px;
-    grid-area: header;
+  background-image: url(../images/1d65cc9ce3375d8fe3a993b90a7d41b6.jpg);
+  display: flex;
+  gap: 20px;
+  grid-area: header;
 }
-
-
 
 /* NAVBAR */
-
 .menuButton {
-    display: none;
+  display: none;
 }
+
 .navbar1 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .menu {
-    display: flex;
-    list-style-type: none;
-    gap: 80px;
+  display: flex;
+  list-style-type: none;
+  gap: 80px;
 }
 
 .menu__item a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
+
 /* MAIN */
 main {
-    grid-area: main;
+  grid-area: main;
 }
 
 .cardSecundaria {
-    padding: 40px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  padding: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .card2 {
-    width: 18rem;
-
+  width: 18rem;
 }
+
 .card2 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .imagen__card2 {
-    max-width: 50%;
+  max-width: 50%;
 }
-
 
 /* FOOTER */
 footer {
-    grid-area: footer;
+  grid-area: footer;
+}
+
+/*--------------------- Pestaña Contacto ---------------- */
+section {
+  display: flex;
 }
 
 /* DISPOSITIVOS MOVILE */
-
-@media screen and (max-width: 768px){
-
-.body1 {
+@media screen and (max-width: 768px) {
+  .body1 {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    grid-template-areas: "header" "main" "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 250px;
-
-}
-
-.navbar1 {
+  }
+  .navbar1 {
     display: none;
-}
-
-.menuButton {
+  }
+  .menuButton {
     display: block;
-}
-
-
-.cardSecundaria {
+  }
+  .cardSecundaria {
     flex-wrap: wrap;
-}
-
-.card2 {
+  }
+  .card2 {
     width: 100%;
-}
-
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
