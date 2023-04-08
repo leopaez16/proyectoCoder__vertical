@@ -15,6 +15,10 @@ nav {
     background-image: url(../images/1d65cc9ce3375d8fe3a993b90a7d41b6.jpg);
 }
 
+.logo {
+    width: 100px;
+}
+
 .nav-item {
     color: white;
     text-decoration: none;
@@ -86,7 +90,7 @@ footer {
     padding: 50px;
 }
 
-/*-------------- Pestaña Hombre --------------*/
+/*-------------- Pestaña Hombre, Mujer, Accesorios --------------*/
 
 /* BODY */
 
@@ -117,48 +121,53 @@ header {
 
 /* NAVBAR */
 
-.menuButton {
-    display: none;
-}
 .navbar1 {
     display: flex;
     align-items: center;
+    .menu {
+        display: flex;
+        list-style-type: none;
+        gap: 40px;
+        .menu__item a {
+            color: white;
+            text-decoration: none;
+        }
+    }
 }
 
-.menu {
-    display: flex;
-    list-style-type: none;
-    gap: 80px;
-}
-
-.menu__item a {
-    color: white;
-    text-decoration: none;
-}
 /* MAIN */
 main {
     grid-area: main;
+    .cardSecundaria {
+        width: 100%;
+        max-width: 1100;
+        padding: 5px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        .card2 {
+            width: 18rem;
+            margin: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            transition: all 500ms ease;
+            cursor: default;
+        &:hover{
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+            transform: translateY(-3%);
+        }
+            .imagen__card2 {
+                max-width: 50%;
+            }
+            .card2 h3 {
+                text-align: center;
+            }
+        
+        }
+    }
 }
-
-.cardSecundaria {
-    padding: 40px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.card2 {
-    width: 18rem;
-
-}
-.card2 h3 {
-    text-align: center;
-}
-
-.imagen__card2 {
-    max-width: 50%;
-}
-
 
 /* FOOTER */
 footer {
@@ -186,14 +195,13 @@ section {
 
 }
 
+header {
+    background-image: url(../images/1d65cc9ce3375d8fe3a993b90a7d41b6.jpg);
+}
+
 .navbar1 {
-    display: none;
+    display: grid;
 }
-
-.menuButton {
-    display: block;
-}
-
 
 .cardSecundaria {
     flex-wrap: wrap;
